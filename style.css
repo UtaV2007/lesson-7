@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#whole {
+    background-image: url("images/background.jpg");
+    background-color: #cccccc;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+    position: sticky;
+}
+
+#basketball {
+    position: absolute;
+    height: 100px;
+    top: 237px;
+    left: 524px;
+    animation: shoot 3s 1;
+    animation-timing-function: linear;
+}
+img {
+    height: 100px;
+}
+@keyframes shoot {
+    0% {
+        height : 100px;
+    }
+    50% {
+        transform : rotate(-7deg) translate(500px, -150px) rotate(180deg)
+    }
+    100% {
+        transform : rotate(20deg) translate(1100px,-330px) rotate(0deg);
+    }
+}
